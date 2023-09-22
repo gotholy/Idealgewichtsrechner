@@ -10,14 +10,11 @@ function berechnen() {
   const körperbau = document.querySelector(
     `input[name="körperbau"]:checked`
   ).value;
+  // // Berechnungen für Variablen die evlt noch wo anders gebraucht werden
   const grundKcalFrau = 655.1 + 9.6 * gewicht + 1.8 * größe - 4.7 * alter;
-  console.log(grundKcalFrau);
   const grundKjFrau = grundKcalFrau * 4.184;
-  console.log(grundKjFrau);
   const grundKcalMann = 66.47 + 13.7 * gewicht + 5 * größe - 6.8 * alter;
-  console.log(grundKcalMann);
   const grundKjMann = grundKcalMann * 4.184;
-  console.log(grundKjMann);
 
   // // Outputs
   const arbeit = document.querySelector("#arbeit").value;

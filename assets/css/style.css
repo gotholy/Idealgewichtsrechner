@@ -4,6 +4,7 @@ body {
 section {
   width: 40vw;
   background-color: aqua;
+  padding: 2vh 2vw;
 }
 form {
   display: flex;
