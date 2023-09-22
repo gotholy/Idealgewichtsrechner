@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section>
+      <h1>Idealgewichtsrechner</h1>
+      <form onsubmit="berechnen(); return false">
+        <label for="körpergröße">Körpergröße</label>
+        <input type="number" name="körpergröße" id="körpergröße" />
+        <label for="alter">Alter</label>
+        <input type="number" name="alter" id="alter" />
+        <label for="gewicht">Gewicht</label>
+        <input type="number" name="gewicht" id="gewicht" />
+        <label for="weiblich">Körperbau</label>
+        <div class="körperbau">
+          <input type="radio" name="körperbau" id="weiblich" value="frau" />
+          <label for="weiblich">Weiblich</label>
+          <input type="radio" name="körperbau" id="männlich" value="mann" />
+          <label for="männlich">Männlich</label>
+        </div>
+        <label for="arbeit">Arbeits-und Freizeitaktivität</label>
+        <select name="arbeit" id="arbeit">
+          <option value="">Wie ist Ihre Körperliche auslastung ?</option>
+          <option value="0.95">Schlafen</option>
+          <option value="1.2">Nur Sitzen oder Liegen</option>
+          <option value="1.5">
+            Ausschließlich sitzende Tätigkeit mit wenig oder keiner Körperlichen
+            Aktivität in der Freizeit, z.B. Büroarbeit
+          </option>
+          <option value="1.7">
+            Sitzende Tätigkeit mit zeitweiliger gehender oder stehender
+            Tätigkeit, z.B. Studierende, Fließbandarbeiter, Laboranten,
+            Kraftfaherer
+          </option>
+          <option value="1.9">
+            Überwiegend gehende oder stehende Tätigkeit z.B. Verkäufer, Kellner,
+            Handwerker, Mechaniker, Hausfrauen
+          </option>
+          <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+        </select>
+        <input type="submit" value="submit" />
+      </form>
+      <div class="gridContainer">
+        <div></div>
+        <h2 class="kcal"></h2>
+        <h2 class="kj"></h2>
+        <p class="grundumsatz"></p>
+        <p class="outputGrundKcal"></p>
+        <p class="outputGrundKJ"></p>
+        <p class="gesamtumsatz"></p>
+        <p class="outputGesamtKcal"></p>
+        <p class="outputGesamtKJ"></p>
+      </div>
+      <script src="./assets/js/main.js"></script>
+    </section>
+  </body>
+</html>
